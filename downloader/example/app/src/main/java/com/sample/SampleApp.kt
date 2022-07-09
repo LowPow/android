@@ -1,8 +1,8 @@
 package com.sample
 
 import android.app.Application
-import com.downloader.Downloader
-import com.downloader.DownloaderConfig
+import com.tamdevs.downloader.Downloader
+import com.tamdevs.downloader.DownloaderConfig
 
 class SampleApp : Application() {
     override fun onCreate() {

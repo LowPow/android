@@ -17,10 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.downloader.Downloader
-import com.downloader.Error
-import com.downloader.OnDownloadListener
-import com.downloader.Status
+import com.tamdevs.downloader.Downloader
+import com.tamdevs.downloader.Error
+import com.tamdevs.downloader.OnDownloadListener
+import com.tamdevs.downloader.Status
 import com.sample.data.constant.Constant.downloadFiles
 import com.sample.utils.Utils
 
