@@ -1,5 +1,6 @@
 package com.downloader.httpclient
 
+import android.os.Build
 import com.downloader.Constants
 import com.downloader.request.DownloadRequest
 import java.io.IOException
@@ -45,12 +46,12 @@ class DefaultHttpClient : HttpClient {
         get() = connection!!.getInputStream()
     override val contentLength: Long
         get() {
-            val length = connection!!.getHeaderField("Content-Length")
-            return try {
-                length.toLong()
-            } catch (e: NumberFormatException) {
-                -1
+            val length = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                connection!!.contentLengthLong
+            } else {
+                connection!!.contentLength.toLong()
             }
+            return length
         }
 
     override fun getResponseHeader(name: String?): String? {

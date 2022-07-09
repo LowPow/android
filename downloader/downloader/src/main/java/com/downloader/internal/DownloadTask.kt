@@ -12,6 +12,7 @@ import java.io.*
 import java.net.HttpURLConnection
 
 class DownloadTask private constructor(private val request: DownloadRequest) {
+
     private var progressHandler: ProgressHandler? = null
     private var lastSyncTime: Long = 0
     private var lastSyncBytes: Long = 0
@@ -23,6 +24,7 @@ class DownloadTask private constructor(private val request: DownloadRequest) {
     private var eTag: String? = null
     private var isResumeSupported = false
     private var tempPath: String? = null
+
     fun run(): Response {
         val response = Response()
         if (request.status == Status.CANCELLED) {
@@ -141,6 +143,7 @@ class DownloadTask private constructor(private val request: DownloadRequest) {
                 removeNoMoreNeededModelFromDatabase()
             }
         } catch (e: IOException) {
+            e.printStackTrace()
             if (!isResumeSupported) {
                 deleteTempFile()
             }
@@ -149,6 +152,7 @@ class DownloadTask private constructor(private val request: DownloadRequest) {
             error.connectionException = e
             response.error = error
         } catch (e: IllegalAccessException) {
+            e.printStackTrace()
             if (!isResumeSupported) {
                 deleteTempFile()
             }
@@ -156,6 +160,8 @@ class DownloadTask private constructor(private val request: DownloadRequest) {
             error.isConnectionError = true
             error.connectionException = e
             response.error = error
+        } catch (e: Exception) {
+            e.printStackTrace()
         } finally {
             closeAllSafely(outputStream)
         }

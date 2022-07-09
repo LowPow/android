@@ -24,6 +24,6 @@ object Utils {
     }
 
     private fun getBytesToMBString(bytes: Long): String {
-        return String.format(Locale.ENGLISH, "%.2fMb", bytes / (1024.00 * 1024.00))
+        return if (bytes == -1L) "Unknown" else String.format(Locale.ENGLISH, "%.2fMb", bytes / (1024.00 * 1024.00))
     }
 }

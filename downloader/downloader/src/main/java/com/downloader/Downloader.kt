@@ -13,21 +13,17 @@ import com.downloader.utils.Utils
  * {#code Downloader.initialize(context)}.
  */
 object Downloader {
+
     /**
      * Initializes Downloader with the custom config.
      *
      * @param context The context
      * @param config  The DownloaderConfig
      */
-    /**
-     * Initializes Downloader with the default config.
-     *
-     * @param context The context
-     */
     @JvmOverloads
     fun initialize(
         context: Context?,
-        config: DownloaderConfig = DownloaderConfig.Companion.newBuilder().build()
+        config: DownloaderConfig = DownloaderConfig.newBuilder().build()
     ) {
         ComponentHolder.instance.init(context, config)
         DownloadRequestQueue.initialize()

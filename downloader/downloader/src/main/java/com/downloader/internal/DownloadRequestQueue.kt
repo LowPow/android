@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicInteger
 
 class DownloadRequestQueue private constructor() {
+
     private val currentRequestMap: MutableMap<Int, DownloadRequest>
     private val sequenceGenerator: AtomicInteger
     private val sequenceNumber: Int

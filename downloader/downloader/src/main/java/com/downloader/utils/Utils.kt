@@ -47,7 +47,7 @@ object Utils {
     fun deleteTempFileAndDatabaseEntryInBackground(path: String, downloadId: Int) {
         Core.getInstance().executorSupplier.forBackgroundTasks()
             .execute {
-                ComponentHolder.instance.getDbHelper()?.remove(downloadId)
+                ComponentHolder.instance.getDbHelper().remove(downloadId)
                 val file = File(path)
                 if (file.exists()) {
                     file.delete()
@@ -57,27 +57,26 @@ object Utils {
 
     fun deleteUnwantedModelsAndTempFiles(days: Int) {
         Core.getInstance().executorSupplier.forBackgroundTasks()
-            .execute(Runnable {
+            .execute {
                 val models: List<DownloadModel>? = ComponentHolder.instance
                     .getDbHelper()
-                    ?.getUnwantedModels(days)
+                    .getUnwantedModels(days)
                 if (models != null) {
                     for (model in models) {
                         val tempPath = getTempPath(model.dirPath, model.fileName)
-                        ComponentHolder.instance.getDbHelper()!!.remove(model.id)
+                        ComponentHolder.instance.getDbHelper().remove(model.id)
                         val file = File(tempPath)
                         if (file.exists()) {
                             file.delete()
                         }
                     }
                 }
-            })
+            }
     }
 
     fun getUniqueId(url: String?, dirPath: String?, fileName: String?): Int {
         val string = url + File.separator + dirPath + File.separator + fileName
-        val hash: ByteArray
-        hash = try {
+        val hash: ByteArray = try {
             MessageDigest.getInstance("MD5").digest(string.toByteArray(charset("UTF-8")))
         } catch (e: NoSuchAlgorithmException) {
             throw RuntimeException("NoSuchAlgorithmException", e)
@@ -107,7 +106,7 @@ object Utils {
             }
             httpClient.close()
             request.url = location
-            httpClient = ComponentHolder.instance.getHttpClient()!!
+            httpClient = ComponentHolder.instance.getHttpClient()
             httpClient.connect(request)
             code = httpClient.responseCode
             location = httpClient.getResponseHeader("Location")

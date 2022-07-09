@@ -64,10 +64,10 @@ class DownloadRequest internal constructor(builder: DownloadRequestBuilder) {
         return this
     }
 
-    fun start(onDownloadListener: OnDownloadListener?): Int {
+    fun start(onDownloadListener: OnDownloadListener): Int {
         this.onDownloadListener = onDownloadListener
         downloadId = Utils.getUniqueId(url, dirPath, fileName)
-        DownloadRequestQueue.instance?.addRequest(this)
+        DownloadRequestQueue.instance!!.addRequest(this)
         return downloadId
     }
 
