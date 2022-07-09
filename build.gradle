@@ -1,0 +1,29 @@
+allprojects {
+	version = "0.0.1-alpha01"
+	group = 'com.tamdevs.android'
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'maven-publish'
+	
+	sourceCompatibility = 11 // java 11
+	targetCompatibility = 11
+
+	java {
+		withSourcesJar()
+		withJavadocJar()
+	}
+
+	publishing {
+		publications {
+			maven(MavenPublication) {
+				groupId project.group
+				artifactId project.name
+				version project.version
+				from components.java
+			}
+		}
+	}
+}
+
