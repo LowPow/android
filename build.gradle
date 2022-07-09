@@ -1,6 +1,6 @@
 allprojects {
-	version = "0.0.1-alpha01"
-	group = 'com.tamdevs.android'
+	version = "0.0.1-alpha02"
+	group = 'com.github.tamdevs.android'
 }
 
 subprojects {
