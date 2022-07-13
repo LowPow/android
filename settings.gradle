@@ -1,0 +1,2 @@
+include ':downloader'
+include ':downloader:downloader'

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Downloader</string>
+    <string name="some_error_occurred">Some error occurred</string>
+    <string name="start">Start</string>
+    <string name="completed">Completed</string>
+    <string name="pause">Pause</string>
+    <string name="cancel">Cancel</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+</resources>
