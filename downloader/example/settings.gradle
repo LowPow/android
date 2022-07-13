@@ -1,5 +1,0 @@
-include ':app'
-
-include ':downloader', ':downloader'
-project(':downloader').projectDir = new File(settingsDir, '../downloader')
-

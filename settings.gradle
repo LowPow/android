@@ -1,1 +1,1 @@
-include ':downloader:downloader'
+include ':downloader'
