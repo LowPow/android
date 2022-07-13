@@ -1,5 +1,5 @@
 allprojects {
-	version = "0.0.1-alpha05"
+	version = "0.0.1-alpha06"
 	group = 'com.github.tamdevs.android'
 }
 
@@ -7,7 +7,7 @@ subprojects {
 	apply plugin: 'java'
 	apply plugin: 'maven-publish'
 	
-	sourceCompatibility = 11 // java 11
+	sourceCompatibility = 11
 	targetCompatibility = 11
 
 	java {
