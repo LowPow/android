@@ -11,7 +11,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 32
         versionCode 1
-        versionName "0.0.1-alpha03"
+        versionName "0.0.1-alpha04"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -49,7 +49,7 @@ afterEvaluate {
 
                 groupId = 'com.github.tamdevs.android'
                 artifactId = 'downloader'
-                version = '0.0.1-alpha02'
+                version = '0.0.1-alpha04'
             }
         }
     }
