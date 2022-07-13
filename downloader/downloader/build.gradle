@@ -11,7 +11,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 32
         versionCode 1
-        versionName "0.0.1-alpha08"
+        versionName "0.0.1-alpha09"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -43,6 +43,7 @@ repositories {
 task sourceJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier "sources"
+    println 'sourceJar Task'
 }
 
 afterEvaluate {
@@ -53,7 +54,7 @@ afterEvaluate {
 
                 groupId = 'com.github.tamdevs.android'
                 artifactId = 'downloader'
-                version = '0.0.1-alpha08'
+                version = '0.0.1-alpha09'
                 artifact(sourceJar)
             }
         }
