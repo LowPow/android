@@ -1,0 +1,1 @@
+sourceset_dependencies='{":downloader:dokkaHtml/androidTestRelease":[],":downloader:dokkaHtml/debug":[],":downloader:dokkaHtml/main":[],":downloader:dokkaHtml/release":[],":downloader:dokkaHtml/testFixtures":[],":downloader:dokkaHtml/testFixturesDebug":[],":downloader:dokkaHtml/testFixturesRelease":[]}'

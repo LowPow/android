@@ -14,99 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0735478b-f975-4882-8ede-807aab7922f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../downloader/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/androidTest/java/com/tamdevs/downloader/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/androidTest/java/com/tamdevs/downloader/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Downloader.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Downloader.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/DownloaderConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/DownloaderConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Error.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Error.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnCancelListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnCancelListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnDownloadListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnDownloadListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnPauseListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnPauseListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnProgressListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnProgressListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnStartOrResumeListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/OnStartOrResumeListener.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Priority.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Priority.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Progress.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Progress.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Response.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Response.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Status.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/Status.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/Core.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/Core.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DefaultExecutorSupplier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DefaultExecutorSupplier.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DownloadExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DownloadExecutor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DownloadFutureTask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/DownloadFutureTask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/ExecutorSupplier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/ExecutorSupplier.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/MainThreadExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/MainThreadExecutor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/PriorityThreadFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/core/PriorityThreadFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/AppDbHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/AppDbHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DatabaseOpenHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DatabaseOpenHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DbHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DbHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DownloadModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/DownloadModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/NoOpsDbHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/database/NoOpsDbHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/handler/ProgressHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/handler/ProgressHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/httpclient/DefaultHttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/httpclient/DefaultHttpClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/httpclient/HttpClient.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/httpclient/HttpClient.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/ComponentHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/ComponentHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadRequestQueue.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadRequestQueue.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadRunnable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadRunnable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadTask.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/DownloadTask.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/SynchronousCall.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/SynchronousCall.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/stream/FileDownloadOutputStream.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/stream/FileDownloadOutputStream.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/stream/FileDownloadRandomAccessFile.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/internal/stream/FileDownloadRandomAccessFile.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/DownloadRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/DownloadRequest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/DownloadRequestBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/DownloadRequestBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/RequestBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/request/RequestBuilder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/utils/Utils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/java/com/tamdevs/downloader/utils/Utils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../downloader/src/test/java/com/tamdevs/downloader/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../downloader/src/test/java/com/tamdevs/downloader/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/sample/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sample/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sample/SampleApp.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sample/data/constant/Constant.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sample/data/model/DownloadFiles.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sample/utils/Utils.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/sample/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-RZ8M42NNYCZ-B4PLwq._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -179,9 +97,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
