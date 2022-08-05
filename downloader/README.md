@@ -3,7 +3,7 @@
 ## Using Downloader Library in your Android application
 
 ```groovy
-implementation 'com.github.tamdevs:android:0.0.1'
+implementation 'com.github.tamdevs:android:0.0.2'
 ```
 
 ### Make a download request
