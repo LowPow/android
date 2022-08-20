@@ -13,10 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.setName("TamDevs Android")
-
-include ':connectivity:app'
-include ':connectivity:connectivity'
-
-include ':downloader:app'
-include ':downloader:downloader'
+rootProject.name = "Connectivity"
+include ':app'
+include ':connectivity'

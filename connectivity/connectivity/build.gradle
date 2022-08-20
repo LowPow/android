@@ -6,36 +6,45 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdk 32
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 32
+        minSdk 21
+        targetSdk 32
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
 }
 
 dependencies {
 
-    implementation "androidx.core:core-ktx:1.8.0"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.6.1'
 
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation "androidx.test:runner:1.4.0"
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     dokkaHtmlPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.7.10")
     dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.7.10")
     dokkaPlugin("org.jetbrains.dokka:kotlin-as-java-plugin:1.7.10")
+
 }
 
 task sourceJar(type: Jar) {
@@ -51,8 +60,8 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.tamdevs.android'
-                artifactId = 'downloader'
-                version = '0.0.2'
+                artifactId = 'connectivity'
+                version = '0.0.1-alpha01'
                 artifact(sourceJar)
             }
         }
@@ -60,16 +69,16 @@ afterEvaluate {
 }
 
 dokkaHtml.configure {
-    outputDirectory.set(file("../../docs/html/downloader"))
+    outputDirectory.set(file("../../docs/html/connectivity"))
 
     dokkaSourceSets {
         named("main") {
             includes.from("Module.md")
-            moduleName.set("Downloader")
+            moduleName.set("Connectivity")
             noAndroidSdkLink.set(false)
             skipEmptyPackages.set(true)
             externalDocumentationLink {
-                url.set(URL("https://tamdevs.github.io/android/downloader/"))
+                url.set(URL("https://tamdevs.github.io/android/connectivity/"))
             }
         }
     }

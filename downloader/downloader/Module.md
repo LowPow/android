@@ -1,5 +1,5 @@
 # Module Downloader
-    A file downloader library in Kotlin for Android with pause and resume support
+    A file downloader library in Kotlin for Android with pause and resume support.
 
 ## Using in your Android application
 
