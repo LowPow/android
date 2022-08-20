@@ -93,10 +93,10 @@ object Utils {
 
     @Throws(IOException::class, IllegalAccessException::class)
     fun getRedirectedConnectionIfAny(
-        httpClient: HttpClient,
+        client: HttpClient,
         request: DownloadRequest
     ): HttpClient {
-        var httpClient = httpClient
+        var httpClient = client
         var redirectTimes = 0
         var code = httpClient.responseCode
         var location = httpClient.getResponseHeader("Location")

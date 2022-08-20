@@ -11,11 +11,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 32
-        versionCode 1
-        versionName "0.0.2"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -67,9 +64,16 @@ afterEvaluate {
 
 dokkaHtml.configure {
     outputDirectory.set(file("../../docs/html/downloader"))
+
     dokkaSourceSets {
         named("main") {
+            includes.from("Module.md")
+            moduleName.set("Downloader")
             noAndroidSdkLink.set(false)
+            skipEmptyPackages.set(true)
+            externalDocumentationLink {
+                url.set(URL("https://tamdevs.github.io/android/downloader/"))
+            }
         }
     }
 }
@@ -78,7 +82,12 @@ dokkaGfm.configure {
     outputDirectory.set(file("../../docs/gfm/downloader"))
     dokkaSourceSets {
         named("main") {
+            moduleName.set("Downloader")
+            includes.from("Module.md")
             noAndroidSdkLink.set(false)
+            externalDocumentationLink {
+                url.set(URL("https://tamdevs.github.io/android/downloader/"))
+            }
         }
     }
 }

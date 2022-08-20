@@ -1,4 +1,4 @@
+rootProject.setName("Downloader")
+
 include ':app'
-
 include ':downloader'
-

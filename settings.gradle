@@ -1,2 +1,4 @@
-include ':downloader'
+rootProject.setName("TamDevs Android")
+
+include ':downloader:app'
 include ':downloader:downloader'
